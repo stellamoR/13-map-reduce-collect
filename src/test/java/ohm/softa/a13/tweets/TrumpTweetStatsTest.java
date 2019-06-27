@@ -1,8 +1,8 @@
-package de.thro.inf.prg3.a13.tweets;
+package ohm.softa.a13.tweets;
 
-import de.thro.inf.prg3.a13.model.Tweet;
-import de.thro.inf.prg3.a13.utils.PrintUtils;
-import de.thro.inf.prg3.a13.utils.ResourceUtils;
+import ohm.softa.a13.model.Tweet;
+import ohm.softa.a13.utils.PrintUtils;
+import ohm.softa.a13.utils.ResourceUtils;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
