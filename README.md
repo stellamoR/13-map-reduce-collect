@@ -140,7 +140,7 @@ String[] split = "Hello World".split("( )+");
 ```
 
 The `reduce` method requires a so called accumulator.
-For this method, an instance of `HashMap<>` or `LinkedHashMap<>` seams to be a good idea.
+For this method, an instance of `HashMap<>` or `LinkedHashMap<>` seems to be a good idea.
 The next part is the reduction step and should be an instance of `BiFunction<>`: a function where the accumulator and a single value is passed in and the accumulator is returned after the value is processed (e.g. inserted to a list).
 (The last part is a _combiner_ that combines two accumulator values but you won't need it this time.)
 
