@@ -8,9 +8,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Stream;
 
-/**
- * @author Peter Kurfer
- */
 public class TrumpTweetStats {
 
     public static Map<String, Long> calculateSourceAppStats(Stream<Tweet> tweetStream) {

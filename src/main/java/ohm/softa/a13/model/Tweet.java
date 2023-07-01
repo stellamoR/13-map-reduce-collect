@@ -11,7 +11,6 @@ import java.util.regex.Pattern;
 
 /**
  * Lightweight representation of a tweet
- * @author Peter Kurfer
  */
 public class Tweet {
 
@@ -152,16 +151,5 @@ public class Tweet {
             return m.group(1);
         }
         return "Unknown";
-    }
-
-    /**
-     * Factory method to create a tweet instance from the corresponding Twitter4j Status object
-     * @param status Twitter4j status wrapper instance
-     * @return Extracted Tweet object
-     * @throws NullPointerException if status is null
-     */
-    public static Tweet fromStatus(Status status) {
-        Objects.requireNonNull(status);
-        return new Tweet(status.getId(), status.getText(), status.getSource(), status.getLang(), status.getRetweetCount());
     }
 }

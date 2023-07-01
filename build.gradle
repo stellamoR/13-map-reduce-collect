@@ -19,9 +19,6 @@ dependencies {
     /* Commons Lang3 */
     compile "org.apache.commons:commons-lang3:$commons_lang_version"
 
-    /* Twitter API */
-    compile "org.twitter4j:twitter4j-core:$twitter4j_version"
-
     /* GSON */
     compile "com.google.code.gson:gson:$gson_version"
 
