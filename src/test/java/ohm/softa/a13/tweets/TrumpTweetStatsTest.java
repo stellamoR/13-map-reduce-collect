@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -29,8 +30,10 @@ class TrumpTweetStatsTest {
 
     TrumpTweetStatsTest() {
         /* get singleton instance of generator factory */
-        this.tsg = TweetStreamGenerator.fromJson(path);
-        /* load stop words */
+
+		this.tsg = TweetStreamGenerator.fromJson(path);
+
+		/* load stop words */
         this.stopWords = ResourceUtils.loadStopWords();
     }
 
